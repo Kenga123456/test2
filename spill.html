@@ -31,7 +31,7 @@
     const container = document.querySelector(".container");
     const scoreDisplay = document.querySelector(".score");
     let divs = [];
-
+    gameStarted = false;
     score = 0;
 
     for (let x = 0; x < 10; x++) {
@@ -92,6 +92,10 @@
 
     let state = "ArrowRight";
     document.addEventListener("keydown", (event) => {
+      if (!gameStarted) {
+        gameStarted = true;
+      }
+
       if (
         (state == "ArrowRight" && event.key == "ArrowLeft") ||
         (state == "ArrowLeft" && event.key == "ArrowRight") ||
@@ -108,7 +112,9 @@
         state = event.key;
       }
     });
-    setInterval(updatePlayer, 150);
+    setInterval(() => {
+      if (gameStarted) updatePlayer();
+    }, 150);
 
     function updatePlayer() {
       //gjør at alt følger hodet
@@ -139,8 +145,7 @@
         playerPos[1] < 0 ||
         playerPos[1] > 9
       ) {
-        gameOver = true; // stop further alerts
-        alert("Game over");
+        gameOver = true;
         location.reload();
       }
 
@@ -150,7 +155,6 @@
           playerPos[1] === playerPositions[i][1]
         ) {
           gameOver = true;
-          alert("Game over");
           location.reload();
         }
       }
