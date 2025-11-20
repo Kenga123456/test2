@@ -16,13 +16,7 @@ body {
   height: 100%;
   background-repeat: no-repeat;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p,h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 a {
@@ -47,7 +41,7 @@ nav {
   justify-content: space-evenly;
 }
 #logo {
-  height: 90%;
+  height: 15vh;
   margin-left: 5%;
 }
 .title {
@@ -59,10 +53,10 @@ nav {
 }
 #title-over {
   color: var(--glacier);
-  font-size: 85%;
+  font-size: 1.2vw;
 }
 #title-under {
-  font-size: 1.3rem;
+  font-size: 2vw;
 }
 .apply {
   color: var(--accent);
