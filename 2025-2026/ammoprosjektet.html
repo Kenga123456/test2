@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ammunisjonboksene</h1>
+    <div class="produkterContainer">
+      <img src="bilder/ammoprosjektet/3dammoboks1.png" alt="" />
+      <img src="bilder/ammoprosjektet/3dammoboks2.png" alt="" />
+    </div>
+
+    <div class="beskrivelserContainer">
+      <div class="ammoboks1">
+        <img src="bilder/ammoprosjektet/ammoboks1.png" alt="" />
+        <div class="beskrivelse">
+          <h2>| Gruppe 1 |</h2>
+          <p>|Sejer, Ane, Håvard, Jonatan|</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi
+          recusandae pariatur? Quos iusto ex sint deleniti assumenda aliquid
+          voluptates!
+        </div>
+      </div>
+      <div class="ammoboks2">
+        <img src="bilder/ammoprosjektet/ammoboks2.png" alt="" />
+        <div class="beskrivelse">
+          <h2>| Gruppe 2 |</h2>
+          <p>|Kevin, Magnus, Erik, Sverre|</p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+          eligendi! Odio magni autem, praesentium voluptates dolore mollitia!
+          Incidunt, quaerat doloribus!
+        </div>
+      </div>
+    </div>
+    <blockquote class="big-quote">“Dette er 10/10”, Sondre C M Juul</blockquote>
+
+    <div class="infoboks">
+      <h2>En iterativ infoboks</h2>
+      <p>
+        I dette prosjektet var målet å lage en ammunisjonsboks ved bruk av
+        3d-printing. Målet var et brukbart sluttresultatet som de på skolen
+        kunne ta nytte av. Vi startet med en brainstorming av ideer og
+        presenterte de deretter til "kundene" våre. Deretter valgte vi ideene
+        som viste seg til å være best og lagde prototyper av de. For hver
+        prototype vi lagde sørget vi for å få masse tilbakemelding fra kundene
+        slik at vi kunne lage en forbedret modell. Og etter noen iterasjoner av
+        dette fikk vi et resultat vi var fornøyd med.
+      </p>
+      <div class="iterasjonBilderContainer">
+        <img src="bilder/ammoprosjektet/iterasjonerammoboks1.png" alt="" />
+        <img src="bilder/ammoprosjektet/iterasjonerammoboks2.png" alt="" />
+      </div>
+    </div>
+  </body>
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .produkterContainer {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      gap: 15%;
+    }
+
+    .produkterContainer img {
+      width: 20%;
+    }
+
+    .beskrivelserContainer {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      gap: 20px;
+    }
+
+    .beskrivelserContainer > div {
+      display: flex;
+      align-items: center;
+
+      flex-direction: column;
+      gap: 15px;
+
+      padding: 20px;
+      border-radius: 15px;
+
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .beskrivelserContainer div > img {
+      width: 100%;
+    }
+
+    .infoboks {
+      width: 70%;
+      margin: 30px auto;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .infoboks h2 {
+      text-align: center;
+    }
+    .infoboks .iterasjonBilderContainer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .infoboks img {
+      width: 40%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .beskrivelserContainer > div:hover,
+    .infoboks:hover {
+      transform: scale(1.01);
+      transition: 0.3s ease-in-out;
+    }
+    .produkterContainer > img:hover {
+      transform: scale(1.03);
+      transition: 0.3s ease-in-out;
+    }
+
+    .big-quote {
+      font-size: 2.7rem;
+      font-style: italic;
+      text-align: center;
+      margin: 50px auto;
+      max-width: 700px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .produkterContainer img {
+        width: 40%;
+        max-width: 300px;
+      }
+
+      .produktersContainer {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .beskrivelserContainer {
+        flex-direction: column;
+      }
+
+      .infoboks .iterasjonBilderContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+      .infoboks .iterasjonBilderContainer img {
+        width: 90%;
+      }
+    }
+  </style>
 </html>
