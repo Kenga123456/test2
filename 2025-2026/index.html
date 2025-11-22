@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forsker & tekno 25/26</title>
- 
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,34 +15,20 @@
     <link rel="stylesheet" href="../meny.css" />
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <img src="../bilder/SFHS_logo.png" alt="" id="logo" />
       <div class="title">
         <div id="title-over">SVALBARD FOLKEHØGSKOLE</div>
-        <div id="title-under">Teknologi & Innovasjon, Forskning og Felt</div>
+        <div id="title-under">Teknologi & Innovasjon, Forskning og felt</div>
       </div>
-
-      <!-- menyknapper (desktop) -->
-      <nav class="menu-nav" aria-label="Hovedmeny">
+      <div class="menu-collapsed"><p>Meny</p></div>
+      <navbar class="menu">
         <a href="../index.html">Hjem</a>
-        <a href="../faq.html">Spill</a>
+        <a href="../spill.html">Spill</a>
+        <a href="../index.html#prosjekter">Prosjekter</a>
         <a href="../faq.html">FAQ</a>
-        <a href="https://svalbardfolkehogskole.no/">Om skolen</a>
-        <a href="https://www.folkehogskole.no/soknad?school=88" class="apply"
-          >Søk nå</a
-        >
-      </nav>
-
-      <!-- burgermeny for mobil: viser "Meny" og ikon; dropdown vil vises under denne knappen -->
-      <div class="mobile-menu-wrapper">
-        <button
-          class="menu-toggle"
-          aria-expanded="false"
-          aria-label="Åpne meny"
-        >
-          <span class="menu-label">Meny</span>
-        </button>
-      </div>
+        <a href="https://svalbardfolkehogskole.no/">Søk nå</a>
+      </navbar>
     </header>
 
     <main>
@@ -55,7 +41,6 @@
         </p>
       </section>
 
-      
       <section class="trips-section">
         <h2>Turer og ekskursjoner</h2>
         <div class="trips-container">
@@ -107,7 +92,9 @@
         </button>
         <button class="filter-btn" data-filter="forsker">Forsker</button>
         <button class="filter-btn" data-filter="tekno">Tekno</button>
-        <button class="filter-btn" data-filter="forskertekno">Forsker/Tekno</button>
+        <button class="filter-btn" data-filter="forskertekno">
+          Forsker/Tekno
+        </button>
       </section>
 
       <section class="projects-section">
@@ -131,12 +118,8 @@
             </div>
           </a>
 
-        <!-- kort til sammarbeid med telenor -->
-          <a
-            href="./bilder.html"
-            class="project-card"
-            data-category="tekno"
-          >
+          <!-- kort til sammarbeid med telenor -->
+          <a href="./bilder.html" class="project-card" data-category="tekno">
             <img src="bilde2.jpg" alt="Prosjekt 2" class="project-card-image" />
             <div class="project-card-content">
               <span class="category-badge tekno">Tekno</span>
@@ -146,9 +129,9 @@
           </a>
 
           <!-- kort til prosjekt 3-->
-          <a 
-            href="prosjekt3.html" 
-            class="project-card" 
+          <a
+            href="prosjekt3.html"
+            class="project-card"
             data-category="forskertekno"
           >
             <img src="bilde3.jpg" alt="Prosjekt 3" class="project-card-image" />
@@ -160,11 +143,7 @@
           </a>
 
           <!-- kort til prosjekt 3-->
-          <a 
-            href="prosjekt3.html" 
-            class="project-card" 
-            data-category="forsker"
-          >
+          <a href="prosjekt3.html" class="project-card" data-category="forsker">
             <img src="bilde3.jpg" alt="Prosjekt 3" class="project-card-image" />
             <div class="project-card-content">
               <span class="category-badge forsker">Forsker</span>
@@ -172,16 +151,14 @@
               <p>Kort beskrivelse av prosjektet...</p>
             </div>
           </a>
-
         </div>
       </section>
-
     </main>
 
     <footer>
       <p>2025 Svalbard Folkehøgskole · Teknologi & Innovasjon, Forskerspire</p>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="../meny.js"></script>
   </body>
 </html>

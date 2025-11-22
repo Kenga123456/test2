@@ -26,6 +26,7 @@
         border-radius: 40px;
         display: flex;
         justify-content: space-between;
+        color: white;
       }
       #card-tekno {
         background: linear-gradient(
@@ -87,36 +88,27 @@
 
       #prosjekter {
         scroll-margin-top: 110px;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <img src="./bilder/SFHS_logo.png" alt="" id="logo" />
       <div class="title">
         <div id="title-over">SVALBARD FOLKEHØGSKOLE</div>
-        <div id="title-under">Teknologi & Innovasjon, Forskning og Felt</div>
+        <div id="title-under">Teknologi & Innovasjon, Forskning og felt</div>
       </div>
-      <nav class="menu-nav" aria-label="Hovedmeny">
-        <a href="#prosjekter">Prosjekter</a>
-        <a href="./spill.html">Spill</a>
-        <a href="./faq.html">FAQ</a>
-        <a href="https://svalbardfolkehogskole.no/">Om skolen</a>
-        <a href="https://www.folkehogskole.no/soknad?school=88" class="apply"
-          >Søk nå</a
-        >
-      </nav>
-
-      <div class="mobile-menu-wrapper">
-        <button
-          class="menu-toggle"
-          aria-expanded="false"
-          aria-label="Åpne meny"
-        >
-          <span class="menu-label">Meny</span>
-        </button>
-      </div>
+      <div class="menu-collapsed"><p>Meny</p></div>
+      <navbar class="menu">
+        <a href="index.html">Hjem</a>
+        <a href="spill.html">Spill</a>
+        <a href="index.html#prosjekter">Prosjekter</a>
+        <a href="faq.html">FAQ</a>
+        <a href="https://svalbardfolkehogskole.no/">Søk nå</a>
+      </navbar>
     </header>
+
     <main>
       <article class="info-card" id="card-tekno">
         <div>

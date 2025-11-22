@@ -12,22 +12,20 @@
     <link rel="stylesheet" href="../meny.css" />
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <img src="../bilder/SFHS_logo.png" alt="" id="logo" />
       <div class="title">
         <div id="title-over">SVALBARD FOLKEHØGSKOLE</div>
         <div id="title-under">Teknologi & Innovasjon, Forskning og felt</div>
       </div>
-      <nav class="menu-nav" aria-label="Hovedmeny">
+      <div class="menu-collapsed"><p>Meny</p></div>
+      <navbar class="menu">
         <a href="../index.html">Hjem</a>
-        <a href="../index.html#prosjekter">Prosjekter</a>
         <a href="../spill.html">Spill</a>
+        <a href="../index.html#prosjekter">Prosjekter</a>
         <a href="../faq.html">FAQ</a>
-        <a href="https://svalbardfolkehogskole.no/">Om skolen</a>
-        <a href="https://www.folkehogskole.no/soknad?school=88" class="apply"
-          >Søk nå</a
-        >
-      </nav>
+        <a href="https://svalbardfolkehogskole.no/">Søk nå</a>
+      </navbar>
     </header>
     <h1>Ammunisjonboksene</h1>
     <div class="produkterContainer">
@@ -79,6 +77,9 @@
   </body>
 
   <style>
+    * {
+      color: #ffffff;
+    }
     h1 {
       text-align: center;
       margin: 30px auto;
@@ -184,4 +185,5 @@
       }
     }
   </style>
+  <script src="../meny.js"></script>
 </html>
