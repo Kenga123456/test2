@@ -92,12 +92,12 @@
   </head>
   <body>
     <header>
-      <img src="../bilder/SFHS_logo.png" alt="" id="logo" />
+      <img src="./bilder/SFHS_logo.png" alt="" id="logo" />
       <div class="title">
         <div id="title-over">SVALBARD FOLKEHØGSKOLE</div>
         <div id="title-under">Teknologi & Innovasjon, Forskning og Felt</div>
       </div>
-      <nav>
+      <nav class="menu-nav" aria-label="Hovedmeny">
         <a href="#prosjekter">Prosjekter</a>
         <a href="./spill.html">Spill</a>
         <a href="./faq.html">FAQ</a>
@@ -106,6 +106,16 @@
           >Søk nå</a
         >
       </nav>
+
+      <div class="mobile-menu-wrapper">
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-label="Åpne meny"
+        >
+          <span class="menu-label">Meny</span>
+        </button>
+      </div>
     </header>
     <main>
       <article class="info-card" id="card-tekno">
@@ -194,6 +204,6 @@
     <footer>
       <p>2025 Svalbard Folkehøgskole · Teknologi & Innovasjon, Forskerspire</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./meny.js"></script>
   </body>
 </html>
