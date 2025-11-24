@@ -149,9 +149,6 @@ footer {
 }
 
 /* scroll shrink navbar */
-.navbar {
-  transition: padding 0.25s ease, background-color 0.25s ease;
-}
 
 #logo,
 #title-over,
@@ -159,8 +156,13 @@ footer {
   transition: all 0.25s ease;
 }
 
+.navbar {
+  height: 16vh;
+  transition: padding 0.25s ease, background-color 0.25s ease;
+}
+
 .navbar.shrink {
-  padding: 4px 20px;
+  height: 10vh;
 }
 
 .navbar.shrink #logo {
