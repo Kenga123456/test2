@@ -36,6 +36,7 @@ body {
   justify-content: center;
   font-weight: bold;
   width: 50%;
+  margin-right: 20px;
 }
 #title-over {
   font-size: 1.3vw;
@@ -80,16 +81,20 @@ body {
   color: #00c0a3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .menu {
     flex-direction: column;
     gap: 10px;
     display: none;
     position: absolute;
-    top: 110px;
-    right: 32px;
+    top: 107px;
+    right: 10px;
     background-color: #07121c;
     align-items: center;
+  }
+
+  .menu.shrink {
+    top: 67px;
   }
 
   .menu-collapsed {
@@ -99,15 +104,15 @@ body {
   }
 
   .menu a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
   }
 
   #title-over {
-    font-size: 1.8vw;
+    font-size: 2vw;
     color: #7fd8ff;
   }
   #title-under {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     color: white;
   }
 }
@@ -141,4 +146,35 @@ a:hover::after {
 footer {
   text-align: center;
   color: white;
+}
+
+/* scroll shrink navbar */
+.navbar {
+  transition: padding 0.25s ease, background-color 0.25s ease;
+}
+
+#logo,
+#title-over,
+#title-under {
+  transition: all 0.25s ease;
+}
+
+.navbar.shrink {
+  padding: 4px 20px;
+}
+
+.navbar.shrink #logo {
+  height: 10vh;
+}
+
+.navbar.shrink #title-over {
+  font-size: 1vw;
+}
+
+.navbar.shrink #title-under {
+  font-size: 1.6vw;
+}
+
+.menu {
+  transition: top 0.25s ease-in-out;
 }
