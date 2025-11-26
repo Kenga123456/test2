@@ -14,7 +14,9 @@
   </head>
   <body>
     <header class="navbar">
-      <img src="../bilder/SFHS_logo.png" alt="" id="logo" />
+      <a href="./index.html">
+        <img src="../bilder/SFHS_logo.png" alt="" id="logo" />
+      </a>
       <div class="title">
         <div id="title-over">SVALBARD FOLKEHØGSKOLE</div>
         <div id="title-under">Teknologi & Forskning</div>
@@ -25,7 +27,11 @@
         <a href="../spill.html">Spill</a>
         <a href="../index.html#prosjekter">Prosjekter</a>
         <a href="../faq.html">FAQ</a>
-        <a href="https://svalbardfolkehogskole.no/">Søk nå</a>
+        <a
+          href="https://www.folkehogskole.no/skole/svalbard/soknad"
+          target="_blank"
+          >Søk nå</a
+        >
       </nav>
     </header>
     <h1>Ammunisjonboksene</h1>
@@ -175,11 +181,17 @@
     @media (max-width: 1000px) {
       .beskrivelserContainer {
         flex-direction: column;
+        width: 90%;
+      }
+      .beskrivelserContainer > div {
       }
 
       .infoboks .iterasjonBilderContainer {
         flex-direction: column;
         align-items: center;
+      }
+      .infoboks {
+        width: 90%;
       }
       .infoboks .iterasjonBilderContainer img {
         width: 90%;
