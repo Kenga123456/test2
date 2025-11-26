@@ -1,12 +1,12 @@
-:root{
-  --night:#0b1b2a;
-  --fjord:#0f3d5c;
-  --glacier:#7fd8ff;
-  --snow:#f6fbff;
-  --ice:#b7d1e2;
-  --accent:#00c0a3;
-  --font-primary:"Montserrat",sans-serif;
-  --font-secondary:"Space Grotesk",sans-serif;
+:root {
+  --night: #0b1b2a;
+  --fjord: #0f3d5c;
+  --glacier: #7fd8ff;
+  --snow: #f6fbff;
+  --ice: #b7d1e2;
+  --accent: #00c0a3;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Space Grotesk", sans-serif;
 }
 body {
   margin: 0;
@@ -92,41 +92,6 @@ body {
   color: var(--accent);
   min-width: 15%;
 }
-@media (max-width: 800px) {
-  .menu {
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-    position: absolute;
-    top: 107px;
-    right: 10px;
-    background-color: var(--night);
-    align-items: center;
-  }
-
-  .menu.shrink {
-    top: 67px;
-  }
-
-  .menu-collapsed {
-    display: block;
-    height: fit-content;
-    width: fit-content;
-  }
-
-  .menu a {
-    padding: 0.5rem 2rem;
-  }
-
-  #title-over {
-    font-size: 2vw;
-    color: var(--glacier);
-  }
-  #title-under {
-    font-size: 2.5vw;
-    color: white;
-  }
-}
 
 /*animation for menu*/
 .menu.show-menu {
@@ -190,4 +155,67 @@ footer {
 
 .menu {
   transition: top 0.25s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 107px;
+    right: 10px;
+    background-color: var(--night);
+    align-items: center;
+  }
+
+  .menu.shrink {
+    top: 67px;
+  }
+
+  .menu-collapsed {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .menu a {
+    padding: 0.5rem 2rem;
+  }
+
+  #title-over {
+    font-size: 2.2vw;
+    color: var(--glacier);
+  }
+  #title-under {
+    font-size: 2.7vw;
+    color: white;
+  }
+
+  .navbar.shrink #title-over {
+    font-size: 3vw;
+  }
+
+  .navbar.shrink #title-under {
+    font-size: 2.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #title-over {
+    font-size: 2.7vw;
+    color: var(--glacier);
+  }
+  #title-under {
+    font-size: 3.4vw;
+    color: white;
+  }
+
+  .navbar.shrink #title-over {
+    font-size: 3.2vw;
+  }
+
+  .navbar.shrink #title-under {
+    font-size: 3vw;
+  }
 }
