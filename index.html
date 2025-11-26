@@ -88,9 +88,22 @@
         margin-bottom: 2rem;
       }
 
+  @media (max-width: 600px) {
+  .kull-card {
+    min-width: 150px;
+    max-width: 180px; 
+    flex: 1 1 calc(50% - 1rem); 
+  }
+}
+
       #prosjekter {
         scroll-margin-top: 110px;
         color: white;
+      }
+      /*____________________________Veit ikkje koffor ditta er nødvendig____________________________________*/
+      h3{
+        color: var(--night);
+        text-decoration: underline var(--night);
       }
     </style>
   </head>
@@ -115,7 +128,7 @@
       <article class="info-card" id="card-tekno">
         <div>
           <h2>Teknologi & Innovasjon</h2>
-          <br />
+          <br/>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quia
             distinctio ut quos illo saepe corporis in doloribus. Non impedit
