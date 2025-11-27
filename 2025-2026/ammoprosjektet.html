@@ -6,7 +6,10 @@
     <title>Ammunisjonsboks - Prosjekt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../meny.css" />
     <link rel="icon" type="image/x-icon" href="../SFHS_logo.ico" />
   </head>
@@ -32,18 +35,31 @@
         >
       </nav>
     </header>
-    <h1>Ammunisjonboksene</h1>
-    <div class="produkterContainer">
-      <img src="../bilder/3dammoboks1.png" alt="" />
-      <img src="../bilder/3dammoboks2.png" alt="" />
+    <div class="infoboks">
+      <h2>Ammunisjosprosjektet</h2>
+      <p>
+        I dette prosjektet var målet å lage en ammunisjonsboks ved bruk av
+        3d-printing. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+        tenetur maxime veritatis recusandae asperiores natus! Dolore, fugit!
+        Molestias vel ullam possimus qui, modi atque, odit corporis nisi dolore
+        sint consequatur iste tenetur dolores facilis recusandae.
+        <br /><br />
+      </p>
+      <div class="produkterContainer">
+        <img src="../bilder/3dammoboks1-removebg-preview.png" alt="" />
+        <img src="../bilder/3dammoboks2-removebg-preview.png" alt="" />
+      </div>
     </div>
+
+    <h1>Ammunisjonboksene</h1>
 
     <div class="beskrivelserContainer">
       <div class="ammoboks1">
         <img src="../bilder/ammoboks1.png" alt="" />
         <div class="beskrivelse">
           <h2>| Gruppe 1 |</h2>
-          <p>|Sejer, Ane, Håvard, Jonatan|</p> <!-- TODO: Legge til ekte tekst -->
+          <p>|Sejer, Ane, Håvard, Jonatan|</p>
+          <!-- TODO: Legge til ekte tekst -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi
           recusandae pariatur? Quos iusto ex sint deleniti assumenda aliquid
           voluptates!
@@ -53,7 +69,8 @@
         <img src="../bilder/ammoboks2.png" alt="" />
         <div class="beskrivelse">
           <h2>| Gruppe 2 |</h2>
-          <p>|Kevin, Magnus, Erik, Sverre|</p> <!-- TODO: Legge til ekte tekst -->
+          <p>|Kevin, Magnus, Erik, Sverre|</p>
+          <!-- TODO: Legge til ekte tekst -->
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
           eligendi! Odio magni autem, praesentium voluptates dolore mollitia!
           Incidunt, quaerat doloribus!
@@ -62,7 +79,7 @@
     </div>
     <blockquote class="big-quote">“Dette er 10/10”, Sondre C M Juul</blockquote>
 
-    <div class="infoboks">
+    <div class="infoboks prosess-container">
       <h2>En iterativ prosess</h2>
       <p>
         I dette prosjektet var målet å lage en ammunisjonsboks ved bruk av
@@ -73,7 +90,7 @@
         prototype vi lagde sørget vi for å få masse tilbakemelding fra kundene
         slik at vi kunne lage en forbedret modell. Og etter noen iterasjoner av
         dette fikk vi et resultat vi var fornøyd med.
-        <br><br>
+        <br /><br />
       </p>
       <div class="iterasjonBilderContainer">
         <img src="../bilder/iterasjonerammoboks1.png" alt="" />
@@ -95,15 +112,17 @@
       display: flex;
       justify-content: center;
       margin: 30px auto;
-      gap: 15%;
+      gap: 10%;
     }
 
     .produkterContainer img {
-      width: 20%;
+      background: rgba(255, 255, 255, 0.05); /* subtle overlay */
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.208);
     }
 
     .beskrivelserContainer {
-      width: 70%;
+      width: 55%;
       display: flex;
       justify-content: center;
       margin: auto;
@@ -120,7 +139,7 @@
       padding: 20px;
       border-radius: 15px;
 
-      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 12px rgba(99, 99, 99, 0.3);
     }
 
     .beskrivelserContainer div > img {
@@ -128,11 +147,11 @@
     }
 
     .infoboks {
-      width: 70%;
+      width: 60%;
       margin: 30px auto;
       border-radius: 15px;
       padding: 40px;
-      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
     .infoboks h2 {
       text-align: center;
@@ -143,17 +162,16 @@
       gap: 20px;
     }
     .infoboks img {
-      width: 40%;
+      width: 35%;
+      padding: 10px 30px;
     }
 
-    .beskrivelserContainer > div:hover,
-    .infoboks:hover {
-      transform: scale(1.01);
-      transition: 0.3s ease-in-out;
+    .prosess-container {
+      box-shadow: 0 4px 12px rgba(131, 131, 131, 0.3);
     }
-    .produkterContainer > img:hover {
-      transform: scale(1.03);
-      transition: 0.3s ease-in-out;
+
+    .prosess-container img {
+      width: 50%;
     }
 
     .big-quote {
@@ -163,18 +181,10 @@
       margin: 50px auto;
       max-width: 700px;
       line-height: 1.5;
-      color: #ffffff;
+      color: #7fd8ff;
     }
 
     @media (max-width: 600px) {
-      .produkterContainer img {
-        width: 40%;
-        max-width: 300px;
-      }
-
-      .produktersContainer {
-        gap: 10px;
-      }
     }
 
     @media (max-width: 1000px) {
@@ -182,13 +192,24 @@
         flex-direction: column;
         width: 90%;
       }
+
       .beskrivelserContainer > div {
+        display: flex;
+        flex-direction: row;
+      }
+      .beskrivelserContainer > div > img {
+        width: 40%;
+        border-radius: 10px;
       }
 
+      .produkterContainer img {
+        width: 50%;
+      }
       .infoboks .iterasjonBilderContainer {
         flex-direction: column;
         align-items: center;
       }
+
       .infoboks {
         width: 90%;
       }
