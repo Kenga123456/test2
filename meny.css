@@ -69,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--snow);
-  margin-right: 30px;
+  padding-right: 60px;
 }
 
 .menu {
@@ -221,7 +221,12 @@ footer {
   .navbar.shrink #title-under {
     font-size: 3vw;
   }
+  .menu-collapsed {
+    width: fit-content;
+  }
+
   .menu-collapsed p {
-    margin-right: 30px;
+    text-align: center;
+    margin-left: -60px;
   }
 }
